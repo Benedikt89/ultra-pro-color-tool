@@ -18,7 +18,7 @@ const addUuidkeys = (obj: PalleteType) => {
 }
 
 export const getImgUrl = (url: string) => {
-  return `${url}`;
+  return `public${url}`;
 }
 
 function App() {
