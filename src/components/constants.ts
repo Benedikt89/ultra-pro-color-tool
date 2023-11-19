@@ -35,7 +35,7 @@ export const restrictions = {
 export const paletteKeys = ["manufacturer", "veneerItem"];
 
 
-const getImgUrl = (url: string) => new URL(`../${url}`, import.meta.url).href
+export const getImgUrl = (url: string) => new URL(`../${url}`, import.meta.url).href
 
 export const veneerList = {
   1: {
@@ -21850,266 +21850,266 @@ export const palettes = {
     mobihel: [
       {
         "id": "276 Приз",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-276-priz-mobihel-1-0l-b60.jpg"),
+        "image": "/mobihel/avtoemal-metallik-276-priz-mobihel-1-0l-b60.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "277 Антилопа",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-277-antilopa-mobihel-1-0l-bc4.jpg"),
+        "image": "/mobihel/avtoemal-metallik-277-antilopa-mobihel-1-0l-bc4.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "277L Антилопа Люкс",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-277l-antilopa-ljuks-mobihel-1-0l-c27.jpg"),
+        "image": "/mobihel/avtoemal-metallik-277l-antilopa-ljuks-mobihel-1-0l-c27.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "270 Нефертити",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-270-nefertiti-mobihel-1-0l-6e2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-270-nefertiti-mobihel-1-0l-6e2.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "Антика",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-antika-mobihel-1-0l-7c6.jpg"),
+        "image": "/mobihel/avtoemal-metallik-antika-mobihel-1-0l-7c6.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "H01 Летний Песок",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-h01-letnij-pesok-mobihel-1-0l-13c.jpg"),
+        "image": "/mobihel/avtoemal-metallik-h01-letnij-pesok-mobihel-1-0l-13c.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "239 Невада",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-239-nevada-mobihel-1-0l-9fa.jpg"),
+        "image": "/mobihel/avtoemal-metallik-239-nevada-mobihel-1-0l-9fa.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "257 Звездная Пыль",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-257-zvezdnaya-pyl-mobihel-1-0l-9f7.jpg"),
+        "image": "/mobihel/avtoemal-metallik-257-zvezdnaya-pyl-mobihel-1-0l-9f7.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "383 Ниагара",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-383-niagara-mobihel-1-0l-d96.jpg"),
+        "image": "/mobihel/avtoemal-metallik-383-niagara-mobihel-1-0l-d96.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "620 Мускат",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-620-muskat-mobihel-1-0l-a59.jpg"),
+        "image": "/mobihel/avtoemal-metallik-620-muskat-mobihel-1-0l-a59.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "Лас Вегас",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-las-vegas-mobihel-1-0l-5f2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-las-vegas-mobihel-1-0l-5f2.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "92L Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-92l-daewoo-mobihel-1-0l-a0f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-92l-daewoo-mobihel-1-0l-a0f.jpg",
         "tags": [
           "beige",
         ],
       },
       {
         "id": "240 Белое облако UNI",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-240-beloe-oblako-uni-mobihel-1-0l-b4e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-240-beloe-oblako-uni-mobihel-1-0l-b4e.jpg",
         "tags": [
           "white",
         ],
       },
       {
         "id": "Айсберг Uni",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-ajsberg-uni-mobihel-1-0l-bdd.jpg"),
+        "image": "/mobihel/avtoemal-metallik-ajsberg-uni-mobihel-1-0l-bdd.jpg",
         "tags": [
           "white",
         ],
       },
       {
         "id": "221 Ледниковый Uni",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-221-lednikovyj-uni-mobihel-1-0l-847.jpg"),
+        "image": "/mobihel/avtoemal-metallik-221-lednikovyj-uni-mobihel-1-0l-847.jpg",
         "tags": [
           "white",
         ],
       },
       {
         "id": "419 Опал",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-419-opal-mobihel-1-0l-2b1.jpg"),
+        "image": "/mobihel/avtoemal-metallik-419-opal-mobihel-1-0l-2b1.jpg",
         "tags": [
           "light-blue",
         ],
       },
       {
         "id": "473 Юпитер",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-473-jupiter-mobihel-1-0l-5f4.jpg"),
+        "image": "/mobihel/avtoemal-metallik-473-jupiter-mobihel-1-0l-5f4.jpg",
         "tags": [
           "light-blue",
         ],
       },
       {
         "id": "245 Золотая нива",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-245-zolotaya-niva-mobihel-1-0l-097.jpg"),
+        "image": "/mobihel/avtoemal-metallik-245-zolotaya-niva-mobihel-1-0l-097.jpg",
         "tags": [
           "yellow",
         ],
       },
       {
         "id": "310 Валюта",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-310-valjuta-mobihel-1-0l-351.jpg"),
+        "image": "/mobihel/avtoemal-metallik-310-valjuta-mobihel-1-0l-351.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "Морано",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-morano-mobihel-1-0l-af5.jpg"),
+        "image": "/mobihel/avtoemal-metallik-morano-mobihel-1-0l-af5.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "311 Игуана",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-311-iguana-mobihel-1-0l-d74.jpg"),
+        "image": "/mobihel/avtoemal-metallik-311-iguana-mobihel-1-0l-d74.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "963 Зеленая",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-963-zelenaya-mobihel-1-0l-98e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-963-zelenaya-mobihel-1-0l-98e.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "Посейдон",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-posejdon-mobihel-1-0l-fbd.jpg"),
+        "image": "/mobihel/avtoemal-metallik-posejdon-mobihel-1-0l-fbd.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "345 Оливковая",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-345-olivkovaya-mobihel-1-0l-044.jpg"),
+        "image": "/mobihel/avtoemal-metallik-345-olivkovaya-mobihel-1-0l-044.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "385 Изумруд",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-385-izumrud-mobihel-1-0l-29c.jpg"),
+        "image": "/mobihel/avtoemal-metallik-385-izumrud-mobihel-1-0l-29c.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "387 Папирус",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-387-papirus-mobihel-1-0l-c20.jpg"),
+        "image": "/mobihel/avtoemal-metallik-387-papirus-mobihel-1-0l-c20.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "421 Афалина",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-421-afalina-mobihel-1-0l-4a1.jpg"),
+        "image": "/mobihel/avtoemal-metallik-421-afalina-mobihel-1-0l-4a1.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "Ангара",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-angara-mobihel-1-0l-9e5.jpg"),
+        "image": "/mobihel/avtoemal-metallik-angara-mobihel-1-0l-9e5.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "03049 Зеленая",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-03049-zelenaya-mobihel-1-0l-98f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-03049-zelenaya-mobihel-1-0l-98f.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "308 Осока",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-308-osoka-mobihel-1-0l-c34.jpg"),
+        "image": "/mobihel/avtoemal-metallik-308-osoka-mobihel-1-0l-c34.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "391 Робин гуд",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-391-robin-gud-mobihel-1-0l-2ab.jpg"),
+        "image": "/mobihel/avtoemal-metallik-391-robin-gud-mobihel-1-0l-2ab.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "650 Совиньон",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-650-sovinon-mobihel-1-0l-327.jpg"),
+        "image": "/mobihel/avtoemal-metallik-650-sovinon-mobihel-1-0l-327.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "301 Серебристая Ива",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-301-serebristaya-iva-mobihel-1-0l-0f0.jpg"),
+        "image": "/mobihel/avtoemal-metallik-301-serebristaya-iva-mobihel-1-0l-0f0.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "6M1 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-6m1-toyota-mobihel-1-0l-d1b.jpg"),
+        "image": "/mobihel/avtoemal-metallik-6m1-toyota-mobihel-1-0l-d1b.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "Скат",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-skat-mobihel-1-0l-089.jpg"),
+        "image": "/mobihel/avtoemal-metallik-skat-mobihel-1-0l-089.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "347 Золото инков",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-347-zoloto-inkov-mobihel-1-0l-048.jpg"),
+        "image": "/mobihel/avtoemal-metallik-347-zoloto-inkov-mobihel-1-0l-048.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "328 Ницца",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-328-nicca-mobihel-1-0l-2f2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-328-nicca-mobihel-1-0l-2f2.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "360 Сочи",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-360-sochi-mobihel-29f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-360-sochi-mobihel-29f.jpg",
         "tags": [
           "green",
           "silver",
@@ -22117,252 +22117,252 @@ export const palettes = {
       },
       {
         "id": "371 Амулет",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-371-amulet-mobihel-778.jpg"),
+        "image": "/mobihel/avtoemal-metallik-371-amulet-mobihel-778.jpg",
         "tags": [
           "green",
         ],
       },
       {
         "id": "399 Табак",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-399-tabak-mobihel-1-0l-0bc.jpg"),
+        "image": "/mobihel/avtoemal-metallik-399-tabak-mobihel-1-0l-0bc.jpg",
         "tags": [
           "brown",
         ],
       },
       {
         "id": "670 Сандаловый",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-670-sandalovyj-mobihel-1-0l-dff.jpg"),
+        "image": "/mobihel/avtoemal-metallik-670-sandalovyj-mobihel-1-0l-dff.jpg",
         "tags": [
           "brown",
         ],
       },
       {
         "id": "795 Пиран",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-795-piran-mobihel-1-0l-364.jpg"),
+        "image": "/mobihel/avtoemal-metallik-795-piran-mobihel-1-0l-364.jpg",
         "tags": [
           "brown",
         ],
       },
       {
         "id": "790 Кориандр",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-790-koriandr-mobihel-1-0l-570.jpg"),
+        "image": "/mobihel/avtoemal-metallik-790-koriandr-mobihel-1-0l-570.jpg",
         "tags": [
           "brown",
         ],
       },
       {
         "id": "246 Ангкор",
-        "image": getImgUrl("assets/mobihel/default.jpg"),
+        "image": "/mobihel/default.jpg",
         "tags": [
           "brown",
         ],
       },
       {
         "id": "217 Миндаль",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-217-mindal-mobihel-1-0l-177.jpg"),
+        "image": "/mobihel/avtoemal-metallik-217-mindal-mobihel-1-0l-177.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "70U Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-70u-daewoo-mobihel-1-0l-ed1.jpg"),
+        "image": "/mobihel/avtoemal-metallik-70u-daewoo-mobihel-1-0l-ed1.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "74U Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-74u-daewoo-mobihel-1-0l-da5.jpg"),
+        "image": "/mobihel/avtoemal-metallik-74u-daewoo-mobihel-1-0l-da5.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "813594 Красный рубин",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-813594-krasnyj-rubin-mobihel-1-0l-2d3.jpg"),
+        "image": "/mobihel/avtoemal-metallik-813594-krasnyj-rubin-mobihel-1-0l-2d3.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "R01 Малина",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-r01-malina-mobihel-1-0l-945.jpg"),
+        "image": "/mobihel/avtoemal-metallik-r01-malina-mobihel-1-0l-945.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "3K1 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-3k1-toyota-mobihel-1-0l-ddd.jpg"),
+        "image": "/mobihel/avtoemal-metallik-3k1-toyota-mobihel-1-0l-ddd.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "100 Триумф",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-100-triumf-mobihel-1-0l-da7.jpg"),
+        "image": "/mobihel/avtoemal-metallik-100-triumf-mobihel-1-0l-da7.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "105 Франкония",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-105-frankoniya-mobihel-1-0l-8bb.jpg"),
+        "image": "/mobihel/avtoemal-metallik-105-frankoniya-mobihel-1-0l-8bb.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "125 Антарес",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-125-antares-mobihel-1-0l-d0d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-125-antares-mobihel-1-0l-d0d.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "128 Искра",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-128-iskra-mobihel-1-0l-343.jpg"),
+        "image": "/mobihel/avtoemal-metallik-128-iskra-mobihel-1-0l-343.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "129 Виктория",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-129-viktoriya-mobihel-1-0l-9e4.jpg"),
+        "image": "/mobihel/avtoemal-metallik-129-viktoriya-mobihel-1-0l-9e4.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "132 Вишня",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-132-vishnya-mobihel-1-0l-cd8.jpg"),
+        "image": "/mobihel/avtoemal-metallik-132-vishnya-mobihel-1-0l-cd8.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "190 Калифорнийский мак",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-190-kalifornijskij-mak-mobihel-1-0l-7ee.jpg"),
+        "image": "/mobihel/avtoemal-metallik-190-kalifornijskij-mak-mobihel-1-0l-7ee.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "192 Портвейн",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-192-portvejn-mobihel-1-0l-e36.jpg"),
+        "image": "/mobihel/avtoemal-metallik-192-portvejn-mobihel-1-0l-e36.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "191 Венера",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-191-venera-mobihel-1-0l-ffa.jpg"),
+        "image": "/mobihel/avtoemal-metallik-191-venera-mobihel-1-0l-ffa.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "104 Калина",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-104-kalina-mobihel-1-0l-8ff.jpg"),
+        "image": "/mobihel/avtoemal-metallik-104-kalina-mobihel-1-0l-8ff.jpg",
         "tags": [
           "red",
         ],
       },
       {
         "id": "286 Опатия",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-286-opatiya-mobihel-1-0l-67a.jpg"),
+        "image": "/mobihel/avtoemal-metallik-286-opatiya-mobihel-1-0l-67a.jpg",
         "tags": [
           "orange",
         ],
       },
       {
         "id": "102 Абрикос",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-102-abrikos-mobihel-1-0l-cdc.jpg"),
+        "image": "/mobihel/avtoemal-metallik-102-abrikos-mobihel-1-0l-cdc.jpg",
         "tags": [
           "orange",
         ],
       },
       {
         "id": "119 Магма",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-119-magma-mobihel-1-0l-27b.jpg"),
+        "image": "/mobihel/avtoemal-metallik-119-magma-mobihel-1-0l-27b.jpg",
         "tags": [
           "orange",
         ],
       },
       {
         "id": "626 Мокрый асфальт",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-626-mokryj-asfalt-mobihel-1-0l-8ea.jpg"),
+        "image": "/mobihel/avtoemal-metallik-626-mokryj-asfalt-mobihel-1-0l-8ea.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "415 Электрон",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-415-elektron-mobihel-1-0l-7b7.jpg"),
+        "image": "/mobihel/avtoemal-metallik-415-elektron-mobihel-1-0l-7b7.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "503 Аккорд",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-503-akkord-mobihel-1-0l-2df.jpg"),
+        "image": "/mobihel/avtoemal-metallik-503-akkord-mobihel-1-0l-2df.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "513 Черный жемчуг",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-513-chernyj-zhemchug-mobihel-1-0l-753.jpg"),
+        "image": "/mobihel/avtoemal-metallik-513-chernyj-zhemchug-mobihel-1-0l-753.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "451 Боровница",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-451-borovnica-mobihel-1-0l-ffa.jpg"),
+        "image": "/mobihel/avtoemal-metallik-451-borovnica-mobihel-1-0l-ffa.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "242 Серый Базальт",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-242-seryj-bazalt-mobihel-1-0l-51d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-242-seryj-bazalt-mobihel-1-0l-51d.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "483 Сириус",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-483-sirius-mobihel-1-0l-0d5.jpg"),
+        "image": "/mobihel/avtoemal-metallik-483-sirius-mobihel-1-0l-0d5.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "1E3 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-1e3-toyota-mobihel-1-0l-e0e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-1e3-toyota-mobihel-1-0l-e0e.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "627 Жимолость",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-627-zhimolost-mobihel-1-0l-491.jpg"),
+        "image": "/mobihel/avtoemal-metallik-627-zhimolost-mobihel-1-0l-491.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "B66 Logan",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-b66-logan-mobihel-1-0l-ee4.jpg"),
+        "image": "/mobihel/avtoemal-metallik-b66-logan-mobihel-1-0l-ee4.jpg",
         "tags": [
           "grey",
         ],
       },
       {
         "id": "630 Кварц",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-630-kvarc-mobihel-f23.jpg"),
+        "image": "/mobihel/avtoemal-metallik-630-kvarc-mobihel-f23.jpg",
         "tags": [
           "grey",
           "silver",
@@ -22370,532 +22370,532 @@ export const palettes = {
       },
       {
         "id": "363 Цунами",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-363-cunami-mobihel-1-0l-44b.jpg"),
+        "image": "/mobihel/avtoemal-metallik-363-cunami-mobihel-1-0l-44b.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "460 Аквамарин",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-460-akvamarin-mobihel-1-0l-0cc.jpg"),
+        "image": "/mobihel/avtoemal-metallik-460-akvamarin-mobihel-1-0l-0cc.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "460L Аквамарин Люкс",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-460l-akvamarin-ljuks-mobihel-1-0l-868.jpg"),
+        "image": "/mobihel/avtoemal-metallik-460l-akvamarin-ljuks-mobihel-1-0l-868.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "498 Лазурно синяя",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-498-lazurno-sinyaya-mobihel-1-0l-3a4.jpg"),
+        "image": "/mobihel/avtoemal-metallik-498-lazurno-sinyaya-mobihel-1-0l-3a4.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "446 Сапфир",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-446-sapfir-mobihel-1-0l-7f2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-446-sapfir-mobihel-1-0l-7f2.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "628 Нептун",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-628-neptun-mobihel-1-0l-bbe.jpg"),
+        "image": "/mobihel/avtoemal-metallik-628-neptun-mobihel-1-0l-bbe.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "487 Лагуна",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-487-laguna-mobihel-1-0l-d7f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-487-laguna-mobihel-1-0l-d7f.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "189 Mercedes",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-189-mercedes-mobihel-1-0l-a08.jpg"),
+        "image": "/mobihel/avtoemal-metallik-189-mercedes-mobihel-1-0l-a08.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "199 Mercedes",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-199-mercedes-mobihel-1-0l-2d9.jpg"),
+        "image": "/mobihel/avtoemal-metallik-199-mercedes-mobihel-1-0l-2d9.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "499 Ривьера",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-499-rivera-mobihel-1-0l-745.jpg"),
+        "image": "/mobihel/avtoemal-metallik-499-rivera-mobihel-1-0l-745.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "50343 Синяя",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-50343-sinyaya-mobihel-1-0l-964.jpg"),
+        "image": "/mobihel/avtoemal-metallik-50343-sinyaya-mobihel-1-0l-964.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "412 Регата",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-412-regata-mobihel-1-0l-1b2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-412-regata-mobihel-1-0l-1b2.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "453 Капри",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-453-kapri-mobihel-1-0l-19e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-453-kapri-mobihel-1-0l-19e.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "61G Logan",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-61g-logan-mobihel-1-0l-0cf.jpg"),
+        "image": "/mobihel/avtoemal-metallik-61g-logan-mobihel-1-0l-0cf.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "742 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-742-toyota-mobihel-1-0l-d19.jpg"),
+        "image": "/mobihel/avtoemal-metallik-742-toyota-mobihel-1-0l-d19.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "478 Слива",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-478-sliva-mobihel-1-0l-585.jpg"),
+        "image": "/mobihel/avtoemal-metallik-478-sliva-mobihel-1-0l-585.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "50411 Тайфун UNI",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-50411-tajfun-uni-mobihel-1-0l-7c0.jpg"),
+        "image": "/mobihel/avtoemal-metallik-50411-tajfun-uni-mobihel-1-0l-7c0.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "426 Мускари",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-426-muskari-mobihel-1-0l-31e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-426-muskari-mobihel-1-0l-31e.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "482 Черника",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-482-chernika-mobihel-1-0l-109.jpg"),
+        "image": "/mobihel/avtoemal-metallik-482-chernika-mobihel-1-0l-109.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "97K Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-97k-daewoo-mobihel-1-0l-12b.jpg"),
+        "image": "/mobihel/avtoemal-metallik-97k-daewoo-mobihel-1-0l-12b.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "429 Персей",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-429-persej-mobihel-1-0l-9a7.jpg"),
+        "image": "/mobihel/avtoemal-metallik-429-persej-mobihel-1-0l-9a7.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "682 Гранта",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-682-granta-mobihel-1-0l-9e3.jpg"),
+        "image": "/mobihel/avtoemal-metallik-682-granta-mobihel-1-0l-9e3.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "434 Голубая Молния",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-434-golubaya-molniya-mobihel-1-0l-4ac.jpg"),
+        "image": "/mobihel/avtoemal-metallik-434-golubaya-molniya-mobihel-1-0l-4ac.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "Наутилус",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-nautilus-mobihel-1-0l-54f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-nautilus-mobihel-1-0l-54f.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "424 Дипломат",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-424-diplomat-mobihel-1-0l-037.jpg"),
+        "image": "/mobihel/avtoemal-metallik-424-diplomat-mobihel-1-0l-037.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "448 Рапсодия",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-448-rapsodiya-mobihel-181.jpg"),
+        "image": "/mobihel/avtoemal-metallik-448-rapsodiya-mobihel-181.jpg",
         "tags": [
           "blue",
         ],
       },
       {
         "id": "408 Чароит",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-408-charoit-mobihel-1-0l-7b0.jpg"),
+        "image": "/mobihel/avtoemal-metallik-408-charoit-mobihel-1-0l-7b0.jpg",
         "tags": [
           "purple",
         ],
       },
       {
         "id": "416 Фея",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-416-feya-mobihel-1-0l-660.jpg"),
+        "image": "/mobihel/avtoemal-metallik-416-feya-mobihel-1-0l-660.jpg",
         "tags": [
           "purple",
         ],
       },
       {
         "id": "515 Изабелла",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-515-izabella-mobihel-1-0l-58b.jpg"),
+        "image": "/mobihel/avtoemal-metallik-515-izabella-mobihel-1-0l-58b.jpg",
         "tags": [
           "purple",
         ],
       },
       {
         "id": "145 Аметист",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-145-ametist-mobihel-1-0l-ddc.jpg"),
+        "image": "/mobihel/avtoemal-metallik-145-ametist-mobihel-1-0l-ddc.jpg",
         "tags": [
           "purple",
         ],
       },
       {
         "id": "602 Авантюрин",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-602-avantjurin-mobihel-1-0l-ba2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-602-avantjurin-mobihel-1-0l-ba2.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "303 BMW",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-303-bmw-mobihel-1-0l-f1d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-303-bmw-mobihel-1-0l-f1d.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "LC9Z Audi",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-lc9z-audi-mobihel-1-0l-237.jpg"),
+        "image": "/mobihel/avtoemal-metallik-lc9z-audi-mobihel-1-0l-237.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "181 BMW",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-181-bmw-mobihel-1-0l-504.jpg"),
+        "image": "/mobihel/avtoemal-metallik-181-bmw-mobihel-1-0l-504.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "635 Черный шоколад",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-635-chernyj-shokolad-mobihel-1-0l-d47.jpg"),
+        "image": "/mobihel/avtoemal-metallik-635-chernyj-shokolad-mobihel-1-0l-d47.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "651 Черный трюфель",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-651-chernyj-trjufel-mobihel-1-0l-d77.jpg"),
+        "image": "/mobihel/avtoemal-metallik-651-chernyj-trjufel-mobihel-1-0l-d77.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "600 Черная Uni",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-600-chernaya-uni-mobihel-1-0l-802.jpg"),
+        "image": "/mobihel/avtoemal-metallik-600-chernaya-uni-mobihel-1-0l-802.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "606 Млечный Путь",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-606-mlechnyj-put-mobihel-c6c.jpg"),
+        "image": "/mobihel/avtoemal-metallik-606-mlechnyj-put-mobihel-c6c.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "665 Космос",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-665-kosmos-mobihel-cf0.jpg"),
+        "image": "/mobihel/avtoemal-metallik-665-kosmos-mobihel-cf0.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "D01 Черная",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-d01-chernaya-mobihel-1-0l-15f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-d01-chernaya-mobihel-1-0l-15f.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "TOYOTA 209 BLACK",
-        "image": getImgUrl("assets/mobihel/default.jpg"),
+        "image": "/mobihel/default.jpg",
         "tags": [
           "black",
         ],
       },
       {
         "id": "95U Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-95u-daewoo-mobihel-1-0l-84d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-95u-daewoo-mobihel-1-0l-84d.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "Сильвер",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-silver-mobihel-1-0l-530.jpg"),
+        "image": "/mobihel/avtoemal-metallik-silver-mobihel-1-0l-530.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "640 Серебряная",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-640-serebryanaya-mobihel-1-0l-aa2.jpg"),
+        "image": "/mobihel/avtoemal-metallik-640-serebryanaya-mobihel-1-0l-aa2.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "70201 Серебряная",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-70201-serebryanaya-mobihel-1-0l-595.jpg"),
+        "image": "/mobihel/avtoemal-metallik-70201-serebryanaya-mobihel-1-0l-595.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "Буран",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-buran-mobihel-1-0l-083.jpg"),
+        "image": "/mobihel/avtoemal-metallik-buran-mobihel-1-0l-083.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "Циклон",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-ciklon-mobihel-1-0l-574.jpg"),
+        "image": "/mobihel/avtoemal-metallik-ciklon-mobihel-1-0l-574.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "1C8 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-1c8-toyota-mobihel-1-0l-d7d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-1c8-toyota-mobihel-1-0l-d7d.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "199 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-199-toyota-mobihel-1-0l-b61.jpg"),
+        "image": "/mobihel/avtoemal-metallik-199-toyota-mobihel-1-0l-b61.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "280 Мираж",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-280-mirazh-mobihel-1-0l-a89.jpg"),
+        "image": "/mobihel/avtoemal-metallik-280-mirazh-mobihel-1-0l-a89.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "KLO Nissan",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-klo-nissan-mobihel-1-0l-19a.jpg"),
+        "image": "/mobihel/avtoemal-metallik-klo-nissan-mobihel-1-0l-19a.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "1C0 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-1c0-toyota-mobihel-1-0l-5d8.jpg"),
+        "image": "/mobihel/avtoemal-metallik-1c0-toyota-mobihel-1-0l-5d8.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "1F7 Toyota",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-1f7-toyota-mobihel-1-0l-fb2_002.jpg"),
+        "image": "/mobihel/avtoemal-metallik-1f7-toyota-mobihel-1-0l-fb2_002.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "230 Жемчуг",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-230-zhemchug-mobihel-1-0l-e72.jpg"),
+        "image": "/mobihel/avtoemal-metallik-230-zhemchug-mobihel-1-0l-e72.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "281 Кристал",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-281-kristal-mobihel-1-0l-150.jpg"),
+        "image": "/mobihel/avtoemal-metallik-281-kristal-mobihel-1-0l-150.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "495 Лунный свет",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-495-lunnyj-svet-mobihel-1-0l-d9d.jpg"),
+        "image": "/mobihel/avtoemal-metallik-495-lunnyj-svet-mobihel-1-0l-d9d.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "610 Рислинг",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-610-risling-mobihel-1-0l-807.jpg"),
+        "image": "/mobihel/avtoemal-metallik-610-risling-mobihel-1-0l-807.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "632 Logan",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-632-logan-mobihel-1-0l-da9.jpg"),
+        "image": "/mobihel/avtoemal-metallik-632-logan-mobihel-1-0l-da9.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "80201 Серебряная",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-80201-serebryanaya-mobihel-1-0l-795.jpg"),
+        "image": "/mobihel/avtoemal-metallik-80201-serebryanaya-mobihel-1-0l-795.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "877052 Сильвер Серебристая",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-877052-silver-serebristaya-mobihel-1-0l-6e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-877052-silver-serebristaya-mobihel-1-0l-6e.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "92U Daewoo",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-92u-daewoo-mobihel-1-0l-b4e.jpg"),
+        "image": "/mobihel/avtoemal-metallik-92u-daewoo-mobihel-1-0l-b4e.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "A19 Mitsubishi",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-a19-mitsubishi-mobihel-1-0l-447.jpg"),
+        "image": "/mobihel/avtoemal-metallik-a19-mitsubishi-mobihel-1-0l-447.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "H81 Mitsubishi",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-h81-mitsubishi-mobihel-1-0l-2ec.jpg"),
+        "image": "/mobihel/avtoemal-metallik-h81-mitsubishi-mobihel-1-0l-2ec.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "LB7Z Audi",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-lb7z-audi-mobihel-1-0l-3d7.jpg"),
+        "image": "/mobihel/avtoemal-metallik-lb7z-audi-mobihel-1-0l-3d7.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "660 Альтаир",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-660-altair-mobihel-1-0l-617.jpg"),
+        "image": "/mobihel/avtoemal-metallik-660-altair-mobihel-1-0l-617.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "691 Платина",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-691-platina-mobihel-1-0l-fab.jpg"),
+        "image": "/mobihel/avtoemal-metallik-691-platina-mobihel-1-0l-fab.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "871167 Паннакота",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-871167-pannakota-mobihel-1-0l-1f6.jpg"),
+        "image": "/mobihel/avtoemal-metallik-871167-pannakota-mobihel-1-0l-1f6.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "LY7P Audi",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-ly7p-audi-mobihel-1-0l-ffc.jpg"),
+        "image": "/mobihel/avtoemal-metallik-ly7p-audi-mobihel-1-0l-ffc.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "Омега",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-omega-mobihel-1-0l-c07.jpg"),
+        "image": "/mobihel/avtoemal-metallik-omega-mobihel-1-0l-c07.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "062 Toyota 1слой",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-062-toyota-1sloj-mobihel-1-0l-7cb.jpg"),
+        "image": "/mobihel/avtoemal-metallik-062-toyota-1sloj-mobihel-1-0l-7cb.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "062 Toyota 2слой",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-062-toyota-2sloj-mobihel-1-0l-b16.jpg"),
+        "image": "/mobihel/avtoemal-metallik-062-toyota-2sloj-mobihel-1-0l-b16.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "206 Талая вода",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-206-talaya-voda-mobihel-1-0l-4eb.jpg"),
+        "image": "/mobihel/avtoemal-metallik-206-talaya-voda-mobihel-1-0l-4eb.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "630 Кварц",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-630-kvarc-mobihel-f23.jpg"),
+        "image": "/mobihel/avtoemal-metallik-630-kvarc-mobihel-f23.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "690 Снежная Королева",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-690-snezhnaya-koroleva-mobihel-eea.jpg"),
+        "image": "/mobihel/avtoemal-metallik-690-snezhnaya-koroleva-mobihel-eea.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "360 Сочи",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-360-sochi-mobihel-29f.jpg"),
+        "image": "/mobihel/avtoemal-metallik-360-sochi-mobihel-29f.jpg",
         "tags": [
           "silver",
         ],
       },
       {
         "id": "744 Mercedes",
-        "image": getImgUrl("assets/mobihel/avtoemal-metallik-744-mercedes-mobihel-85a.jpg"),
+        "image": "/mobihel/avtoemal-metallik-744-mercedes-mobihel-85a.jpg",
         "tags": [
           "silver",
         ],

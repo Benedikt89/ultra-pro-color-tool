@@ -1,6 +1,7 @@
 import React from "react";
 import {Typography} from "antd";
 
+export const getImgUrl = (url: string) => new URL(`../assets/${url}`, import.meta.url).href
 
 const ColorItem: React.FC = ({item, onClick, colorName}: any) => {
   const color = () => {
@@ -10,12 +11,10 @@ const ColorItem: React.FC = ({item, onClick, colorName}: any) => {
     }
     return '#ffffff'
   }
-
+  if (item.image) console.log(item.image, getImgUrl(item.image))
   return item.image ? (
-    <div key={`${item.id}_${(item.tags ?? []).join('')}`} className={'mobihelItem'}
-         onClick={onClick}
-    >
-      <img src={item.image || ''} loading="lazy" alt="color"/>
+    <div className={'mobihelItem'} onClick={onClick}>
+      <img src={getImgUrl(item.image)} loading="lazy" alt="color"/>
       <Typography.Text>{item.id}</Typography.Text>
     </div>
   ) : (
