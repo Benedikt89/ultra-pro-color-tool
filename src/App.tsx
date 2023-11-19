@@ -1,9 +1,8 @@
-
 import './App.css'
 import Palletes from "./components/filters.tsx";
 import {Button, ConfigProvider, message, theme, Upload, UploadProps} from "antd";
 import {palettes} from "./components/constants.ts";
-import {useEffect, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 import initData from './assets/data.json';
@@ -17,6 +16,12 @@ const addUuidkeys = (obj: PalleteType) => {
 
   return res;
 }
+
+export const getImgUrl = (url: string) => {
+  let href = new URL(`../assets${url}`, import.meta.url).href
+  return href.replace('undefined', `assets${url}`);
+}
+
 function App() {
   const [data, setData] = useState(addUuidkeys(initData));
 
@@ -67,6 +72,14 @@ function App() {
     },
   };
 
+  const transformed = useMemo(() => {
+    const res = {...data};
+    Object.keys(res).forEach(key => {
+      res[key] = (res[key] ?? []).map(c => !c.image ? c : ({ ...c, imageUrl: getImgUrl(c.image) }))
+    });
+
+    return res;
+  }, [data]);
   return (
     <>
       <ConfigProvider
@@ -81,7 +94,7 @@ function App() {
               <Button>Click to Upload</Button>
             </Upload>
           </div>
-          <Palletes data={data} setData={setData} />
+          <Palletes data={transformed} setData={setData} />
         </div>
       </ConfigProvider>
     </>
