@@ -18,8 +18,7 @@ const addUuidkeys = (obj: PalleteType) => {
 }
 
 export const getImgUrl = (url: string) => {
-  let href = new URL(`../assets${url}`, import.meta.url).href
-  return href.replace('/undefined', `${url}`);
+  return `public${url}`;
 }
 
 function App() {
