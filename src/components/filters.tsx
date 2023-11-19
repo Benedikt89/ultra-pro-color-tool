@@ -1,4 +1,4 @@
-import {Checkbox, Col, Input, Row, Tabs, TabsProps} from "antd";
+import {Button, Checkbox, Col, Input, Row, Tabs, TabsProps} from "antd";
 import React, {useState} from "react";
 import ColorItem from "./ColorItem.tsx";
 import './styles.less';
@@ -20,6 +20,7 @@ export const clusters = [
 
 const Palletes = ({data, setData}) => {
   const [filter, setFilter] = useState('');
+  const [noTags, setNoTags] = useState(false);
   const [colorTag, setColorTag] = useState<string>('')
   const [tab, setTab] = useState<string>('ral')
   const handleFilterChange = (fields: string[]) => {
@@ -52,7 +53,9 @@ const Palletes = ({data, setData}) => {
     key: key,
     label: key,
     children: <div className={'paletteWrapper'}>
-      {(data[key] ?? []).filter(col => col.id.includes(filter)).map((item, i) => (
+      {(data[key] ?? [])
+        .filter(col => col.id.includes(filter) && (noTags ? !col.tags?.length : true) && (!(col.tags ?? []).includes(colorTag)))
+        .map((item, i) => (
           <ColorItem
             key={`${item.uuid}_${i}`}
             item={item}
@@ -65,12 +68,15 @@ const Palletes = ({data, setData}) => {
 
   const byTag = (data[tab] ?? []).filter(col => (col.tags ?? []).includes(colorTag) && col.id.includes(filter));
 
-  console.log(byTag)
-
   return (
     <Row>
       <Col span={12}>
-        <Input value={filter} onChange={e => setFilter(e.target.value)} />
+        <div style={{display: 'flex', flexDirection: 'row'}}>
+          <Button onClick={() => setNoTags(!noTags)} style={{marginRight: 10}}>
+            {noTags ? 'Without tags' : 'All colors'}
+          </Button>
+          <Input value={filter} onChange={e => setFilter(e.target.value)} />
+        </div>
         <Tabs defaultActiveKey={tab} items={items} onChange={setTab} />
       </Col>
       <Col span={12}>
