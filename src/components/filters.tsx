@@ -1,38 +1,32 @@
-import {Button, Checkbox, Col, Input, Row, Tabs, TabsProps} from "antd";
-import React, {useState} from "react";
+import {Button, Col, Input, Row, Tabs, TabsProps} from "antd";
+import React, {useCallback, useMemo, useState} from "react";
 import ColorItem from "./ColorItem.tsx";
 import './styles.less';
 
 export const clusters = [
+  {name: 'yellow', leadColor: [255, 224, 1], colors: []},
+  {name: 'orange', leadColor: [255, 165, 0], colors: []},
   {name: 'red', leadColor: [255, 0, 0], colors: []},
-  {name: 'orange', leadColor: [255, 128, 0], colors: []},
-  {name: 'yellow', leadColor: [255, 255, 0], colors: []},
-  {name: 'chartreuse', leadColor: [128, 255, 0], colors: []},
-  {name: 'green', leadColor: [0, 255, 0], colors: []},
-  {name: 'cyan', leadColor: [0, 255, 255], colors: []},
-  {name: 'blue', leadColor: [0, 0, 255], colors: []},
   {name: 'violet', leadColor: [127, 0, 255], colors: []},
-  {name: 'magenta', leadColor: [255, 0, 255], colors: []},
+  {name: 'blue', leadColor: [0, 128, 255], colors: []},
+  {name: 'green', leadColor: [0, 208, 2], colors: []},
+  {name: 'grey', leadColor: [128, 128, 128], colors: []},
+  {name: 'brown', leadColor: [97, 64, 33], colors: []},
   {name: 'black', leadColor: [0, 0, 0], colors: []},
-  {name: 'grey', leadColor: [235, 235, 235], colors: []},
   {name: 'white', leadColor: [255, 255, 255], colors: []},
 ];
-
-const Palletes = ({data, setData}) => {
+interface Color  { id: string; uuid: string; tags: string[]; }
+const Palletes = ({data, setData}: any) => {
   const [filter, setFilter] = useState('');
   const [noTags, setNoTags] = useState(false);
   const [colorTag, setColorTag] = useState<string>('')
   const [tab, setTab] = useState<string>('ral')
-  const handleFilterChange = (fields: string[]) => {
-    console.log(fields)
-    setColorTag(prev => fields.filter(f => !prev.includes(f))[0] ?? '')
-  }
-  const blackCheckColor = ['white', 'beige', 'light-blue', 'yellow']
-  const getCheckColor = (value) => {
-    return blackCheckColor.includes(value) ? 'black' : 'white'
-  }
 
-  const onColorClick = (color) => {
+  const handleFilterChange = useCallback((field: string) => {
+    setColorTag(prev => prev === field ? '' : field)
+  }, []);
+
+  const onColorClick = useCallback((color: Color) => {
     if (!colorTag) return;
     const tags = (color.tags ?? []);
     const col = {
@@ -41,36 +35,40 @@ const Palletes = ({data, setData}) => {
         ? tags.filter(t => !colorTag.includes(t))
         : [...tags, colorTag]
     }
-    console.log(colorTag, col.tags)
     setData(prev => ({
       ...prev,
       [tab]: prev[tab].map(c => c.uuid === col.uuid ? col : c)
     }))
-  }
+  }, [colorTag, setData, tab])
 
+  const tabFilter = useCallback((col: { id: string | string[]; tags: string[]; }) =>
+    col.id.includes(filter) && (noTags ? !col.tags?.length : true) && (!(col.tags ?? []).includes(colorTag)),
+    [colorTag, filter, noTags]);
 
-  const items: TabsProps['items'] = Object.keys(data).map(key => ({
+  const items: TabsProps['items'] = useMemo(() => Object.keys(data).map(key => ({
     key: key,
     label: key,
     children: <div className={'paletteWrapper'}>
       {(data[key] ?? [])
-        .filter(col => col.id.includes(filter) && (noTags ? !col.tags?.length : true) && (!(col.tags ?? []).includes(colorTag)))
-        .map((item, i) => (
-          <ColorItem
-            key={`${item.uuid}_${i}`}
-            item={item}
-            onClick={() => onColorClick(item)}
-          />
-        ),
-      )}
+        .filter(tabFilter)
+        .map((item: Color) => (
+            <ColorItem
+              key={item.uuid}
+              item={item}
+              onClick={() => onColorClick(item)}
+            />
+          ),
+        )}
     </div>,
-  }));
+  })), [data, onColorClick, tabFilter]);
 
-  const byTag = (data[tab] ?? []).filter(col => (col.tags ?? []).includes(colorTag) && col.id.includes(filter));
+  const byTag = useMemo(() => (data[tab] ?? [])
+    .filter((col: Color) => (col.tags ?? []).includes(colorTag) && col.id.includes(filter)),
+    [colorTag, data, filter, tab]);
 
   return (
     <Row>
-      <Col span={12}>
+      <Col span={11} style={{ marginRight: 10 }}>
         <div style={{display: 'flex', flexDirection: 'row'}}>
           <Button onClick={() => setNoTags(!noTags)} style={{marginRight: 10}}>
             {noTags ? 'Without tags' : 'All colors'}
@@ -79,29 +77,24 @@ const Palletes = ({data, setData}) => {
         </div>
         <Tabs defaultActiveKey={tab} items={items} onChange={setTab} />
       </Col>
-      <Col span={12}>
-        <Checkbox.Group
-          className={''}
-          value={[colorTag]}
-          onChange={handleFilterChange}
-        >
+      <Col span={11}>
+        <div className="clusters-row">
           {clusters.map(cl => (
-            <Checkbox
-              key={cl.name}
-              className={'filterCheckbox'}
+            <div
               style={{
-                "--background-color": cl.name,
-                "--border-color": "black",
-                "--check-color": getCheckColor(cl.name),
+                "--background-color": `rgb(${cl.leadColor.join(',')})`,
+                "--border-color": "magenta",
               } as React.CSSProperties}
-              value={cl.name}
-            />
+              key={cl.name}
+              onClick={() => handleFilterChange(cl.name)}
+              className={`cluster ${colorTag === cl.name ? 'selected' : ''}`}
+            >{cl.name}</div>
           ))}
-        </Checkbox.Group>
+        </div>
         <div className={'paletteWrapper'}>
-          {byTag.map(col => (
+          {byTag.map((col: Color) => (
             <ColorItem
-              key={`${col.uuid}_`}
+              key={col.uuid}
               item={col}
               onClick={() => onColorClick(col)}
             />

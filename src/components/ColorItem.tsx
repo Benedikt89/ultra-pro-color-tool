@@ -1,6 +1,5 @@
 import React from "react";
-import {Typography} from "antd";
-import {getImgUrl} from "./constants.ts";
+import {Tooltip, Typography} from "antd";
 
 const ColorItem: React.FC = ({item, onClick, colorName}: any) => {
   const color = () => {
@@ -11,29 +10,35 @@ const ColorItem: React.FC = ({item, onClick, colorName}: any) => {
     return '#ffffff'
   }
 
+  const tagsString = (item.tags ?? []).length ? (item.tags ?? []).join(', ') : 'No added Tags'
+
   return item.imageUrl ? (
-    <div className={'mobihelItem'} onClick={onClick}>
-      <img src={item.imageUrl} loading="lazy" alt="color"/>
-      <Typography.Text>{item.id}</Typography.Text>
-    </div>
-  ) : (
-    <div key={item?.id} className={'paletteItem'}>
-      <div
-        style={{
-          height: '100%',
-          width: '100%',
-          padding: '5px',
-          cursor: 'pointer',
-          position: 'relative',
-          outline: 'none',
-          transition: 'box-shadow 100ms ease 0s',
-          boxShadow: `${item.hex} 0px 0px 0px ${colorName === item.id ? '5px' : "38px"} inset`,
-        }}
-        onClick={onClick}
-      >
-        {colorName !== item.id && <p style={{color: color()}}>{item.id}</p>}
+    <Tooltip title={tagsString}>
+      <div className={'mobihelItem'} onClick={onClick}>
+        <img src={item.imageUrl} loading="lazy" alt="color"/>
+        <Typography.Text>{item.id}</Typography.Text>
       </div>
-    </div>
+    </Tooltip>
+  ) : (
+    <Tooltip title={tagsString}>
+      <div key={item?.id} className={'paletteItem'}>
+        <div
+          style={{
+            height: '100%',
+            width: '100%',
+            padding: '5px',
+            cursor: 'pointer',
+            position: 'relative',
+            outline: 'none',
+            transition: 'box-shadow 100ms ease 0s',
+            boxShadow: `${item.hex} 0px 0px 0px ${colorName === item.id ? '5px' : "38px"} inset`,
+          }}
+          onClick={onClick}
+        >
+          {colorName !== item.id && <p style={{color: color()}}>{item.id}</p>}
+        </div>
+      </div>
+    </Tooltip>
   )
 }
 

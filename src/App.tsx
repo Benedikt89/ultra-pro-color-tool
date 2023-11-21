@@ -1,18 +1,24 @@
 import './App.css'
-import Palletes from "./components/filters.tsx";
+import Palletes, {clusters} from "./components/filters.tsx";
 import {Button, ConfigProvider, message, theme, Upload, UploadProps} from "antd";
 import {palettes} from "./components/constants.ts";
-import {useEffect, useMemo, useState} from "react";
+import {useMemo, useState} from "react";
 import { v4 as uuidv4 } from 'uuid';
 
 import initData from './assets/data.json';
 
 type PalleteType = typeof palettes.manufacturer;
-const addUuidkeys = (obj: PalleteType) => {
+
+const actualTags = clusters.map(cl => cl.name);
+const transformJsonData = (obj: PalleteType) => {
   const res = {...obj};
-  Object.keys(obj).forEach(key => {
-    res[key] = (res[key] ?? []).map(c => c.uuid ? c : ({ ...c, uuid: uuidv4() }))
-  });
+  for (const key in obj) {
+    res[key] = (res[key] ?? []).map(c => ({
+      ...c,
+      tags: (c.tags ?? []).filter(t => actualTags.includes(t)),
+      uuid: c.uuid ?? uuidv4()
+    }))
+  }
 
   return res;
 }
@@ -22,11 +28,8 @@ export const getImgUrl = (url: string) => {
 }
 
 function App() {
-  const [data, setData] = useState(addUuidkeys(initData));
+  const [data, setData] = useState(transformJsonData(initData));
 
-  useEffect(() => {
-
-  }, []);
   const downloadJson = () => {
     const filename = 'data.json';
     const jsonStr = JSON.stringify(data);
@@ -46,7 +49,7 @@ function App() {
     try {
       console.log(event.target.result);
       const obj = JSON.parse(event.target.result);
-      setData(addUuidkeys(obj));
+      setData(transformJsonData(obj));
       message.success('Uploaded successfully!')
     } catch (e) {
       message.error('Wrong format!')
