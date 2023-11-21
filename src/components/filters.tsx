@@ -1,4 +1,4 @@
-import {Button, Col, Input, Row, Tabs, TabsProps} from "antd";
+import {Button, Col, Input, Row, Tabs, TabsProps, Tooltip} from "antd";
 import React, {useCallback, useMemo, useState} from "react";
 import ColorItem from "./ColorItem.tsx";
 import './styles.less';
@@ -70,9 +70,14 @@ const Palletes = ({data, setData}: any) => {
     <Row>
       <Col span={11} style={{ marginRight: 10 }}>
         <div style={{display: 'flex', flexDirection: 'row'}}>
-          <Button onClick={() => setNoTags(!noTags)} style={{marginRight: 10}}>
-            {noTags ? 'Without tags' : 'All colors'}
-          </Button>
+          <Tooltip title={
+            noTags ? 'Сейчас в колонке отображаются цвета без хотябы одного цветового тэга'
+              : 'Сейчас в колонке отображаются все цвета, не зависимо от тэга, кроме тех что в правой колонке'
+          }>
+            <Button onClick={() => setNoTags(!noTags)} style={{marginRight: 10}}>
+              {noTags ? 'Without tags' : 'All colors'}
+            </Button>
+          </Tooltip>
           <Input value={filter} onChange={e => setFilter(e.target.value)} />
         </div>
         <Tabs defaultActiveKey={tab} items={items} onChange={setTab} />

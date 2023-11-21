@@ -10,7 +10,7 @@ const ColorItem: React.FC = ({item, onClick, colorName}: any) => {
     return '#ffffff'
   }
 
-  const tagsString = (item.tags ?? []).length ? (item.tags ?? []).join(', ') : 'No added Tags'
+  const tagsString = (item.tags ?? []).length ? (item.tags ?? []).join(', ') : 'Нету никаких тэгов'
 
   return item.imageUrl ? (
     <Tooltip title={tagsString}>
